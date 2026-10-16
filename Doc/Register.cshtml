@@ -1,0 +1,15 @@
+@model RegisterViewModel
+@{ ViewData["Title"] = "Create account"; }
+<div class="form-page"><div class="form-intro"><span class="eyebrow">JOIN THE COMMUNITY</span><h1>Your next chapter<br/><span>starts at the start line.</span></h1><p>Create your RaceDay account to discover events, manage your entries and track your progress.</p><div class="mini-feature">✓ &nbsp; Find events that fit your pace</div><div class="mini-feature">✓ &nbsp; Keep your race details in one place</div></div>
+<div class="form-card"><h2>Create account</h2><p class="muted">It only takes a minute.</p>
+<form asp-action="Register" method="post">
+<div asp-validation-summary="ModelOnly" class="validation"></div>
+<label asp-for="FullName">Full name</label><input asp-for="FullName" placeholder="Your full name"/><span asp-validation-for="FullName" class="validation"></span>
+<label asp-for="Email">Email address</label><input asp-for="Email" placeholder="you@example.com"/><span asp-validation-for="Email" class="validation"></span>
+<label asp-for="PhoneNumber">Phone number <small>(optional)</small></label><input asp-for="PhoneNumber" placeholder="082 000 0000"/><span asp-validation-for="PhoneNumber" class="validation"></span>
+<label asp-for="Role">I want to</label><select asp-for="Role"><option value="Participant">Join events as a participant</option><option value="Organiser">Organise events</option></select>
+<label asp-for="Password">Password</label><input asp-for="Password" placeholder="At least 8 characters"/><span asp-validation-for="Password" class="validation"></span>
+<label asp-for="ConfirmPassword">Confirm password</label><input asp-for="ConfirmPassword" placeholder="Enter password again"/><span asp-validation-for="ConfirmPassword" class="validation"></span>
+<button class="btn btn-primary btn-full" type="submit">Create my account →</button>
+</form><p class="form-switch">Already registered? <a asp-action="Login">Log in</a></p></div></div>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

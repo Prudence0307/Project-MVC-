@@ -1,0 +1,7 @@
+@model IEnumerable<RaceResult>
+@{ ViewData["Title"] = "Leaderboard"; Category category = ViewBag.Category; }
+<a class="back-link" asp-controller="Categories" asp-action="Details" asp-route-id="@category.CategoryID">← @category.CategoryName</a>
+<div class="page-heading"><div><span class="eyebrow">RACE DAY RESULTS</span><h1>Leaderboard</h1><p>@category.Event?.EventName · @category.CategoryName</p></div><span class="pill">@(Model.Count()) finishers</span></div>
+@if (!Model.Any()) { <div class="empty-state"><h3>Results are not available yet</h3><p>Check back after the event.</p></div> } else {
+<div class="table-wrap"><table><thead><tr><th>Position</th><th>Participant</th><th>Finish time</th><th>Status</th></tr></thead><tbody>@foreach (var r in Model) { <tr><td><span class="rank">@(r.Position?.ToString() ?? "—")</span></td><td><strong>@r.Enrolment?.Participant?.FullName</strong></td><td>@(r.FinishTime?.ToString(@"hh\:mm\:ss") ?? "—")</td><td><span class="status">@r.Status</span></td></tr> }</tbody></table></div>
+}

@@ -1,0 +1,9 @@
+@model LoginViewModel
+@{ ViewData["Title"] = "Log in"; }
+<div class="form-page login-page"><div class="form-intro"><span class="eyebrow">WELCOME BACK</span><h1>Ready when<br/><span>you are.</span></h1><p>Log in to manage your events, entries and results.</p></div>
+<div class="form-card"><h2>Log in</h2><p class="muted">Good to see you again.</p><form asp-action="Login" method="post">
+<div asp-validation-summary="ModelOnly" class="validation"></div>
+<label asp-for="Email">Email address</label><input asp-for="Email" placeholder="you@example.com"/><span asp-validation-for="Email" class="validation"></span>
+<label asp-for="Password">Password</label><input asp-for="Password" placeholder="Your password"/><span asp-validation-for="Password" class="validation"></span>
+<button class="btn btn-primary btn-full" type="submit">Log in →</button></form><p class="form-switch">New to RaceDay? <a asp-action="Register">Create an account</a></p></div></div>
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }

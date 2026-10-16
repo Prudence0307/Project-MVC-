@@ -35,4 +35,6 @@ The supplied SQL script seeds sample users with placeholder password hashes (`HA
 The attached API plan describes REST endpoints. This starter implements the core browser MVC workflows, not the complete `/api/...` REST surface yet. Weather forecast integration, route create/edit, organiser enrolment management, result capture/edit, full profile/history screens and a REST API layer remain to be implemented. Add a weather provider API key before enabling live forecasts.
 
 For production: add email verification/password reset, stronger rate limiting, audit logging, secure secrets management, automated tests, and review cookie/CSRF/security settings.
+## A working CI/CD WORKFLOW
+<img width="991" height="396" alt="Screenshot 2026-10-16 220311" src="https://github.com/user-attachments/assets/00dbd135-3601-4437-8323-7420ceadd811" />
 

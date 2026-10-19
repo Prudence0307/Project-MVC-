@@ -19,7 +19,7 @@ A starter web application built from the supplied RaceDay API endpoint plan and 
 - .NET 8 SDK
 - SQL Server LocalDB (usually installed with Visual Studio) or SQL Server
 
-## Run it
+## How to run it
 1. Extract the ZIP and open `RaceDayMVC.csproj` in Visual Studio.
 2. Check `appsettings.json` and update `ConnectionStrings:RaceDayDB` if your SQL Server instance differs.
 3. Create the database using one of these approaches:

@@ -12,7 +12,7 @@ A starter web application built from the supplied RaceDay API endpoint plan and 
 - Category creation and details / route information
 - Participant enrolment, capacity checks, duplicate prevention and cancellation
 - Public category leaderboard
-- Responsive RaceDay landing page and UI styling
+- Responsive RaceDay landing page and IU styling 
 
 ## Requirements
 - Visual Studio 2022 with the ASP.NET and web development workload

@@ -38,6 +38,5 @@ For production: add email verification/password reset, stronger rate limiting, a
 ## A working CI/CD WORKFLOW
 <img width="991" height="396" alt="Screenshot 2026-10-16 220311" src="https://github.com/user-attachments/assets/00dbd135-3601-4437-8323-7420ceadd811" />
 ## YouTube link
-YouTube Link
  
 https://youtu.be/Za3dCCCp_gc
